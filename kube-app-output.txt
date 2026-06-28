@@ -1,10 +1,10 @@
 Commands:
-flask --app service run --port=8080
-curl -s http://localhost:8080/ | python -m json.tool
+flask --app service run --host=0.0.0.0 --port=8080
+curl -s http://0.0.0.0:8080/ | python -m json.tool
 
 Output:
 {
     "name": "Account REST API Service",
-    "paths": "http://localhost:8080/accounts",
+    "paths": "http://0.0.0.0:8080/accounts",
     "version": "1.0"
 }
