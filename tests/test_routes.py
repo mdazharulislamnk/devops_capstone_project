@@ -64,12 +64,12 @@ class TestAccountService(unittest.TestCase):
         self.assertEqual(len(resp.get_json()), 2)
 
     def test_security_headers_check(self):
-        """security headers check"""
+        """It should return security headers"""
         resp = self.app.get('/accounts')
         self.assertEqual(resp.headers.get('X-Frame-Options'), 'SAMEORIGIN')
         self.assertEqual(resp.headers.get('X-Content-Type-Options'), 'nosniff')
 
     def test_cors_check(self):
-        """cors check"""
+        """It should return a CORS header"""
         resp = self.app.get('/accounts')
         self.assertEqual(resp.headers.get('Access-Control-Allow-Origin'), '*')
