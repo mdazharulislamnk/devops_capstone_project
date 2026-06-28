@@ -1,7 +1,3 @@
-Command:
-curl http://localhost:8080/
-
-Output:
 {
   "name": "Account REST API Service",
   "paths": "http://localhost:8080/accounts",
