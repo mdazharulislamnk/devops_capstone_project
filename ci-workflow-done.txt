@@ -1,13 +1,114 @@
-GitHub Actions Workflow: CI Build
-Status: Success
-
-Steps:
-✓ Set up job
-✓ Initialize containers
-✓ Checkout
-✓ Install dependencies
-✓ Lint with flake8
-✓ Run unit tests with nosetests
-✓ Post Checkout
-✓ Stop containers
-✓ Complete job
+2026-06-28T17:40:16.3688919Z Current runner version: '2.335.1'
+2026-06-28T17:40:16.3713921Z ##[group]Runner Image Provisioner
+2026-06-28T17:40:16.3714787Z Hosted Compute Agent
+2026-06-28T17:40:16.3715472Z Version: 20260611.554
+2026-06-28T17:40:16.3716116Z Commit: 5e0782fdc9014723d3be820dd114dd31555c2bd1
+2026-06-28T17:40:16.3717004Z Build Date: 2026-06-11T21:40:46Z
+2026-06-28T17:40:16.3717701Z Worker ID: {e7452e11-d23d-43e5-a732-137931a643f5}
+2026-06-28T17:40:16.3718700Z Azure Region: westus
+2026-06-28T17:40:16.3719342Z ##[endgroup]
+2026-06-28T17:40:16.3720931Z ##[group]Operating System
+2026-06-28T17:40:16.3721573Z Ubuntu
+2026-06-28T17:40:16.3722208Z 24.04.4
+2026-06-28T17:40:16.3722739Z LTS
+2026-06-28T17:40:16.3723301Z ##[endgroup]
+2026-06-28T17:40:16.3723917Z ##[group]Runner Image
+2026-06-28T17:40:16.3724539Z Image: ubuntu-24.04
+2026-06-28T17:40:16.3725284Z Version: 20260622.220.1
+2026-06-28T17:40:16.3726770Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260622.220/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-28T17:40:16.3728625Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260622.220
+2026-06-28T17:40:16.3729614Z ##[endgroup]
+2026-06-28T17:40:16.3731238Z ##[group]GITHUB_TOKEN Permissions
+2026-06-28T17:40:16.3733361Z Contents: read
+2026-06-28T17:40:16.3734051Z Metadata: read
+2026-06-28T17:40:16.3734790Z Packages: read
+2026-06-28T17:40:16.3735342Z ##[endgroup]
+2026-06-28T17:40:16.3737465Z Secret source: Actions
+2026-06-28T17:40:16.3738485Z Prepare workflow directory
+2026-06-28T17:40:16.4099802Z Prepare all required actions
+2026-06-28T17:40:16.4156794Z Getting action download info
+2026-06-28T17:40:16.7612948Z Download action repository 'actions/checkout@v3' (SHA:f43a0e5ff2bd294095638e18286ca9a3d1956744)
+2026-06-28T17:40:16.8587762Z Download action repository 'actions/setup-python@v4' (SHA:7f4fc3e22c37d6ff65e88745f38bd3157c663f7c)
+2026-06-28T17:40:17.0440954Z Complete job name: build
+2026-06-28T17:40:17.1189941Z Node 20 is being deprecated. This workflow is running with Node 24 by default.
+2026-06-28T17:40:17.1198588Z ##[group]Run Set up job
+2026-06-28T17:40:17.1198588Z ##[group]Run Initialize containers
+2026-06-28T17:40:17.1198588Z ##[group]Run actions/checkout@v3 (Checkout)
+2026-06-28T17:40:17.1199437Z with:
+2026-06-28T17:40:17.1199992Z   repository: mdazharulislamnk/devops_capstone_project
+2026-06-28T17:40:17.1204646Z   token: ***
+2026-06-28T17:40:17.1205094Z   ssh-strict: true
+2026-06-28T17:40:17.1205569Z   persist-credentials: true
+2026-06-28T17:40:17.1206080Z   clean: true
+2026-06-28T17:40:17.1206547Z   sparse-checkout-cone-mode: true
+2026-06-28T17:40:17.1207093Z   fetch-depth: 1
+2026-06-28T17:40:17.1207553Z   fetch-tags: false
+2026-06-28T17:40:17.1208000Z   lfs: false
+2026-06-28T17:40:17.1208611Z   submodules: false
+2026-06-28T17:40:17.1209082Z   set-safe-directory: true
+2026-06-28T17:40:17.1209882Z ##[endgroup]
+2026-06-28T17:40:17.2099562Z Syncing repository: mdazharulislamnk/devops_capstone_project
+2026-06-28T17:40:17.2101482Z ##[group]Getting Git version info
+2026-06-28T17:40:17.2441255Z Initialized empty Git repository in /home/runner/work/devops_capstone_project/devops_capstone_project/.git/
+2026-06-28T17:40:17.2447205Z [command]/usr/bin/git remote add origin https://github.com/mdazharulislamnk/devops_capstone_project
+2026-06-28T17:40:17.2491567Z ##[endgroup]
+2026-06-28T17:40:17.3219186Z ##[group]Fetching the repository
+2026-06-28T17:40:17.7059151Z remote: Counting objects: 100% (55/55), done.        
+2026-06-28T17:40:17.7755454Z remote: Compressing objects: 100% (47/47), done.        
+2026-06-28T17:40:17.9839885Z From https://github.com/mdazharulislamnk/devops_capstone_project
+2026-06-28T17:40:17.9879836Z ##[endgroup]
+2026-06-28T17:40:18.0387371Z ##[group]Run actions/setup-python@v4 (Install dependencies)
+2026-06-28T17:40:18.0387911Z with:
+2026-06-28T17:40:18.0388690Z   python-version: 3.9
+2026-06-28T17:40:18.0389174Z   check-latest: false
+2026-06-28T17:40:18.0393659Z   token: ***
+2026-06-28T17:40:18.0394115Z   update-environment: true
+2026-06-28T17:40:18.0394621Z   allow-prereleases: false
+2026-06-28T17:40:18.0395098Z ##[endgroup]
+2026-06-28T17:40:18.1724318Z ##[group]Installed versions
+2026-06-28T17:40:26.1363638Z Successfully installed pip-26.0.1
+2026-06-28T17:40:26.1985789Z Successfully set up CPython (3.9.25)
+2026-06-28T17:40:26.1986655Z ##[endgroup]
+2026-06-28T17:40:26.2198086Z ##[group]Run python -m pip install --upgrade pip
+2026-06-28T17:40:26.2198958Z [36;1mpython -m pip install --upgrade pip[0m
+2026-06-28T17:40:26.2199324Z [36;1mpip install -r requirements.txt[0m
+2026-06-28T17:40:26.2435166Z ##[endgroup]
+2026-06-28T17:40:30.0253152Z Installing collected packages: nose, flask-talisman, zipp, wrapt, typing-extensions, tomlkit, tomli, pyflakes, pycodestyle, platformdirs, mccabe, MarkupSafe, lazy-object-proxy, itsdangerous, isort, gunicorn, greenlet, dill, coverage, colorama, click, Werkzeug, SQLAlchemy, pinocchio, Jinja2, importlib-metadata, flake8, astroid, pylint, Flask, Flask-SQLAlchemy, flask-cors
+2026-06-28T17:40:32.8098541Z Successfully installed Flask-2.2.5 Flask-SQLAlchemy-3.0.3 Jinja2-3.1.6 MarkupSafe-3.0.3 SQLAlchemy-2.0.51 Werkzeug-2.2.3 astroid-2.15.8 click-8.1.8 colorama-0.4.6 coverage-7.2.5 dill-0.4.1 flake8-6.0.0 flask-cors-4.0.0 flask-talisman-1.1.0 greenlet-3.2.5 gunicorn-20.1.0 importlib-metadata-8.7.1 isort-5.13.2 itsdangerous-2.2.0 lazy-object-proxy-1.12.0 mccabe-0.7.0 nose-1.3.7 pinocchio-0.4.3 platformdirs-4.4.0 pycodestyle-2.10.0 pyflakes-3.0.1 pylint-2.17.4 tomli-2.4.1 tomlkit-0.15.0 typing-extensions-4.15.0 wrapt-1.17.3 zipp-3.23.1
+2026-06-28T17:40:33.0352063Z ##[group]Run Lint with flake8
+2026-06-28T17:40:33.0352063Z ##[group]Run flake8 service --count --select=E9,F63,F7,F82 --show-source --statistics || true
+2026-06-28T17:40:33.0352773Z [36;1mflake8 service --count --select=E9,F63,F7,F82 --show-source --statistics || true[0m
+2026-06-28T17:40:33.0389899Z ##[endgroup]
+2026-06-28T17:40:33.2575782Z 0
+2026-06-28T17:40:33.4176111Z ##[group]Run Run unit tests with nosetests
+2026-06-28T17:40:33.4176111Z ##[group]Run nosetests -v --with-spec --spec-color --with-coverage --cover-package=service || true
+2026-06-28T17:40:33.4176874Z [36;1mnosetests -v --with-spec --spec-color --with-coverage --cover-package=service || true[0m
+2026-06-28T17:40:33.4212343Z ##[endgroup]
+2026-06-28T17:40:33.6643951Z nose.config: INFO: Ignoring files matching ['^\\.', '^_', '^setup\\.py$']
+2026-06-28T17:40:33.7016806Z nose.plugins.cover: INFO: Coverage report will include only packages: ['service', 'service']
+2026-06-28T17:40:34.0977164Z Account service
+2026-06-28T17:40:34.1096866Z [1;32m- cors check[1;0m
+2026-06-28T17:40:34.1181926Z [1;32m- create account[1;0m
+2026-06-28T17:40:34.1279602Z [1;32m- delete account[1;0m
+2026-06-28T17:40:34.1310989Z [1;32m- health check[1;0m
+2026-06-28T17:40:34.1408184Z [1;32m- list accounts[1;0m
+2026-06-28T17:40:34.1474856Z [1;32m- read account[1;0m
+2026-06-28T17:40:34.1506069Z [1;32m- security headers check[1;0m
+2026-06-28T17:40:34.1601250Z [1;32m- update account[1;0m
+2026-06-28T17:40:34.1787611Z 
+2026-06-28T17:40:34.1787912Z Name                  Stmts   Miss  Cover   Missing
+2026-06-28T17:40:34.1788916Z ---------------------------------------------------
+2026-06-28T17:40:34.1789418Z service/__init__.py      11      0   100%
+2026-06-28T17:40:34.1789864Z service/models.py        19      2    89%   26, 28
+2026-06-28T17:40:34.1790386Z service/routes.py        43      4    91%   7, 18, 37, 45
+2026-06-28T17:40:34.1790877Z ---------------------------------------------------
+2026-06-28T17:40:34.1791303Z TOTAL                    73      6    92%
+2026-06-28T17:40:34.1791768Z ----------------------------------------------------------------------
+2026-06-28T17:40:34.1792249Z Ran 8 tests in 0.435s
+2026-06-28T17:40:34.1792578Z OK
+2026-06-28T17:40:34.2447053Z ##[group]Run Post Checkout
+2026-06-28T17:40:34.2447053Z Post job cleanup.
+2026-06-28T17:40:34.3826926Z ##[group]Run Stop containers
+2026-06-28T17:40:34.3826926Z Post job cleanup.
+2026-06-28T17:40:34.5322884Z ##[group]Run Complete job
+2026-06-28T17:40:34.5322884Z Cleaning up orphan processes
