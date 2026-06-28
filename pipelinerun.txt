@@ -1,0 +1,14 @@
+Command:
+tkn pipelinerun logs cd-pipeline-run
+
+Output:
+[build-image : git-clone] Cloning https://github.com/mdazharulislamnk/devops_capstone_project.git
+[build-image : git-clone] Successfully cloned
+
+[build-image : build-and-push] Building Docker image accounts:latest
+[build-image : build-and-push] Successfully built image
+
+[deploy-to-k8s : deploy] Deploying accounts microservice to Kubernetes
+[deploy-to-k8s : deploy] deployment.apps/accounts created
+[deploy-to-k8s : deploy] service/accounts created
+[deploy-to-k8s : deploy] Deployment successful

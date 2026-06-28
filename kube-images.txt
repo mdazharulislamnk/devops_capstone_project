@@ -1,0 +1,7 @@
+Command:
+docker build -t accounts .
+docker images
+
+Output:
+REPOSITORY                     TAG        IMAGE ID       CREATED          SIZE
+accounts                       latest     2a45a8ceee9a   37 seconds ago   249MB

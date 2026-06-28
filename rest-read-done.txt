@@ -1,11 +1,24 @@
 Command:
-curl -X GET http://127.0.0.1:5000/accounts/1
+curl -i -X GET http://127.0.0.1:5000/accounts/1
 
 Output:
+HTTP/1.1 200 OK
+Server: Werkzeug/2.2.3 Python/3.10.0
+Date: Sun, 28 Jun 2026 17:24:28 GMT
+Content-Type: application/json
+Content-Length: 123
+Access-Control-Allow-Origin: *
+Permissions-Policy: browsing-topics=()
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'; object-src 'none'
+Referrer-Policy: strict-origin-when-cross-origin
+Connection: close
+
 {
-  "address": null,
+  "address": "123 Main St",
   "email": "john@email.com",
   "id": 1,
   "name": "John Doe",
-  "phone_number": null
+  "phone_number": "555-1234"
 }

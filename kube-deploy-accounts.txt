@@ -1,0 +1,16 @@
+Command:
+kubectl get all
+
+Output:
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/accounts-6b8f5d5b7f-x9j4p       1/1     Running   0          2m
+
+NAME                 TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+service/kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP    5d
+service/accounts     ClusterIP   10.100.123.234   <none>        8080/TCP   2m
+
+NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/accounts   1/1     1            1           2m
+
+NAME                                  DESIRED   CURRENT   READY   AGE
+replicaset.apps/accounts-6b8f5d5b7f   1         1         1       2m
