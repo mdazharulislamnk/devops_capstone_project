@@ -2,6 +2,14 @@ from flask import jsonify, request, abort
 from service import app, db
 from service.models import Account
 
+@app.route('/')
+def index():
+    return jsonify(
+        name="Account REST API Service",
+        version="1.0",
+        paths=f"{request.base_url}accounts"
+    ), 200
+
 
 @app.route('/accounts', methods=['POST'])
 def create_account():
