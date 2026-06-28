@@ -1,0 +1,13 @@
+Command:
+curl -X GET http://127.0.0.1:5000/accounts
+
+Output:
+[
+  {
+    "address": null,
+    "email": "john@email.com",
+    "id": 1,
+    "name": "John Doe",
+    "phone_number": null
+  }
+]

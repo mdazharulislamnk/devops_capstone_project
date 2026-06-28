@@ -1,0 +1,11 @@
+Command:
+curl -X PUT http://127.0.0.1:5000/accounts/1 -H "Content-Type: application/json" -d "{\"name\":\"John Doe\",\"email\":\"john@email.com\",\"phone_number\":\"555-1234\"}"
+
+Output:
+{
+  "address": null,
+  "email": "john@email.com",
+  "id": 1,
+  "name": "John Doe",
+  "phone_number": "555-1234"
+}
