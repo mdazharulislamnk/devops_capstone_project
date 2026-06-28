@@ -1,4 +1,15 @@
 Command:
-curl -X DELETE http://127.0.0.1:5000/accounts/1
+curl -i -X DELETE http://127.0.0.1:5000/accounts/1
 
 Output:
+HTTP/1.1 204 NO CONTENT
+Server: Werkzeug/2.2.3 Python/3.10.0
+Date: Sun, 28 Jun 2026 17:34:46 GMT
+Content-Type: text/html; charset=utf-8
+Access-Control-Allow-Origin: *
+Permissions-Policy: browsing-topics=()
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'; object-src 'none'
+Referrer-Policy: strict-origin-when-cross-origin
+Connection: close
