@@ -1,25 +1,21 @@
-nosetests -v --with-spec --spec-color --with-coverage --cover-package=service
-nose.config: INFO: Ignoring files matching ['^\\.', '^_', '^setup\\.py$']
-nose.plugins.cover: INFO: Coverage report will include only packages: ['service', 'service']
-
 Account service
-- cors check
+It should return a CORS header
 - create account
 - delete account
 - health check
 - list accounts
 - read account
-- security headers check
+It should return security headers
 - update account
 
 Name                  Stmts   Miss  Cover   Missing
 ---------------------------------------------------
-service\__init__.py      11      0   100%
-service\models.py        19      2    89%   26, 28
-service\routes.py        40      3    92%   10, 29, 37
+service/__init__.py      11      0   100%
+service/models.py        19      2    89%   26, 28
+service/routes.py        40      3    92%   10, 29, 37
 ---------------------------------------------------
 TOTAL                    70      5    93%
 ----------------------------------------------------------------------
-Ran 8 tests in 0.568s
+Ran 8 tests in 0.520s
 
 OK
