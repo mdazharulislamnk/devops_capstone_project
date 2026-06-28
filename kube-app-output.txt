@@ -1,6 +1,6 @@
 Commands:
 flask --app service run --host=0.0.0.0 --port=8080
-curl -s http://0.0.0.0:8080/ | python -m json.tool
+curl -s -H "Host: 0.0.0.0:8080" http://127.0.0.1:8080/ | python -m json.tool
 
 Output:
 {
