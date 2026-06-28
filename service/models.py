@@ -1,5 +1,6 @@
 from service import db
 
+
 class Account(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), nullable=False)
@@ -15,7 +16,7 @@ class Account(db.Model):
             "address": self.address,
             "phone_number": self.phone_number
         }
-    
+
     def deserialize(self, data):
         if "name" in data:
             self.name = data.get("name")
