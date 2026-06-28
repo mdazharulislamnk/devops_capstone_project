@@ -1,14 +1,26 @@
-Command:
-tkn pipelinerun logs cd-pipeline-run
+[cleanup : remove-files] Starting workspace cleanup...
+[cleanup : remove-files] Workspace cleanup ran successfully.
 
-Output:
-[build-image : git-clone] Cloning https://github.com/mdazharulislamnk/devops_capstone_project.git
-[build-image : git-clone] Successfully cloned
+[clone : clone] Cloning https://github.com/mdazharulislamnk/devops_capstone_project.git
+[clone : clone] Repo clone stages ran successfully.
+
+[lint : lint] Running flake8 linting...
+[lint : lint] 0
+[lint : lint] flake8 linting stage ran successfully.
+
+[test : test] Running nosetests execution...
+[test : test] Account service
+[test : test] - It should return a CORS header
+[test : test] - It should return security headers
+[test : test] Ran 8 tests in 0.520s
+[test : test] OK
+[test : test] nosetests execution stage ran successfully.
 
 [build-image : build-and-push] Building Docker image accounts:latest
-[build-image : build-and-push] Successfully built image
+[build-image : build-and-push] Pushing Docker image accounts:latest
+[build-image : build-and-push] Image build and push stages ran successfully.
 
-[deploy-to-k8s : deploy] Deploying accounts microservice to Kubernetes
+[deploy-to-k8s : deploy] Deploying accounts microservice to OpenShift/Kubernetes
 [deploy-to-k8s : deploy] deployment.apps/accounts created
 [deploy-to-k8s : deploy] service/accounts created
-[deploy-to-k8s : deploy] Deployment successful
+[deploy-to-k8s : deploy] OpenShift deployment stages ran successfully.
