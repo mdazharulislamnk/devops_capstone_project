@@ -1,0 +1,20 @@
+Account service
+- create account                                                       [ OK ]
+- read account                                                         [ OK ]
+- update account                                                       [ OK ]
+- delete account                                                       [ OK ]
+- list accounts                                                        [ OK ]
+- security headers check                                               [ OK ]
+- cors check                                                           [ OK ]
+
+Name                  Stmts   Miss  Cover   Missing
+---------------------------------------------------
+service/__init__.py       8      0   100%
+service/models.py        19      0   100%
+service/routes.py        40      0   100%
+---------------------------------------------------
+TOTAL                    67      0   100%
+----------------------------------------------------------------------
+Ran 7 tests in 0.450s
+
+OK
